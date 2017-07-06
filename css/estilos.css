@@ -5,8 +5,10 @@ body {
 }
 
 header{
+	display: block;
+    margin: auto;
 	background-color: #5b7989;
-	width: 100%;
+	width: 70%;
 	height: 100px;
 	border-radius: 10px 10px 0px 0px; 
 	right: 0;
@@ -19,13 +21,25 @@ header{
 }
 
 .texto1 h1{
-		text-shadow: 2px 2px #02010a;
+	text-shadow: 2px 2px #02010a;
 }
 
 .navbar{
 	padding-top: 20px;
 	float: right;
 	text-align: right;
+}
+
+.inicio {
+	text-decoration: none;
+}
+
+.paisajes {
+	text-decoration: none;
+}
+
+.retratos {
+	text-decoration: none;
 }
 
 .navbar ul li{
@@ -51,18 +65,19 @@ header{
 }
 
 picture{
-	padding-top: 25px;
-	padding-bottom: 25px;
-	display: flex;
-	justify-content: center;
-	width: 100%;
+	display: block;
+    margin: auto;
+	padding-top: 30px;
+	width: 70%;
 	height: 400px;
 	background: #82c3a6;
-	
 }
 
-picture img{
-	width: 50%;
+picture img{	
+	border: 2px solid white;
+    display: block;
+    margin: auto;
+    width: 80%;
 }
 
 #contenido {
@@ -81,14 +96,20 @@ footer {
 	text-align: center;
 }
 
+div.contenedor{
+	display: block;
+    margin: auto;
+    width: 70%;
+}
 .contenedor {
+	background-color: #d5c75f ;
 	display: flex;
 	flex-direction: row;
 }
 
 div img{
 	border: 2px solid white;
-	width: 200px;
+	width: 300px;
 }
 
 .contenedor > div {
