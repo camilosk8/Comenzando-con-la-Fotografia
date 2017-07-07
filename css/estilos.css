@@ -81,35 +81,20 @@ picture img{
 }
 
 #contenido {
+	border: 1px;
 	display: flex;
 	flex-direction: column;
 }
 
-#contenido > h1 {
-	padding: 10px;
-	text-align: center;
-}
-
-footer {
-	margin-top: 10px;
-	padding-top: 10px;
-	text-align: center;
-}
-
 div.contenedor{
-	display: block;
     margin: auto;
     width: 70%;
 }
+
 .contenedor {
 	background-color: #d5c75f ;
 	display: flex;
 	flex-direction: row;
-}
-
-div img{
-	border: 2px solid white;
-	width: 300px;
 }
 
 .contenedor > div {
@@ -119,22 +104,71 @@ div img{
 	width: 50%;
 }
 
-#imagen1 img{
-	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-	filter: grayscale(100%);
+div img{
+	display: inline;
+	width: 500px;
 }
 
-#imagen2 img{
-	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
-	filter: blur(10px);
+div img[src$="imagen1.jpg"]{
+	border: 2px solid black;
+	box-shadow: 2px 0px #82c3a6;
 }
 
-#imagen3 img{
-	-webkit-filter: invert(100%); /* Chrome, Safari, Opera */
-	filter: invert(100%);
+div img[src$="imagen2.jpg"]{
+	border: 2px solid black;
+	box-shadow: 2px 0px #82c3a6;
 }
 
-#imagen4 img{
-	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
-	filter: sepia(90%);
+#imagen1{
+	animation-name: out;
+	animation-name: imagen1-animacion-out;
+	transition: 1s;
 }
+
+#imagen1:hover{
+
+	animation-name: imagen1-animacion-in;
+	transform: rotate( 10deg);
+	transition: 1s;
+}
+
+@keyframes
+imagen1-animacion-in {
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@keyframes
+imagen1-animacion-out {
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+#imagen2{
+	animation-name: out;
+	animation-name: imagen2-animacion-out;
+	transition: 1s;
+}
+
+#imagen2:hover{
+	animation-name: imagen2-animacion-in;
+	transform: translate();
+	transition: 1s;
+}
+
+@keyframes
+imagen2-animacion-in {
+	to {
+		transform: translate(5px,20px);
+	}
+}
+
+@keyframes
+imagen2-animacion-out {
+	to {
+		transform: translate();
+	}
+}
+
