@@ -1,5 +1,5 @@
 body {
-	background: #000;
+	background: #02010a;
 	color: white;
 	font-family: 'Oswald', sans-serif;
 }
@@ -49,7 +49,6 @@ header{
 }
 
 .navbar ul li a{
-
 }
 
 .navbar ul li a:link{
@@ -65,7 +64,8 @@ header{
 }
 
 picture{
-	display: block;
+	box-shadow: 2px 0px #82c3a6;
+	display: inline-block;
     margin: auto;
 	padding-top: 30px;
 	width: 70%;
@@ -74,7 +74,7 @@ picture{
 }
 
 picture img{	
-	border: 2px solid white;
+
     display: block;
     margin: auto;
     width: 80%;
@@ -86,20 +86,21 @@ picture img{
 	flex-direction: column;
 }
 
-div.contenedor{
-    margin: auto;
+.contenedor {
+	margin: auto;
     width: 70%;
+	height: 415px;
+	background-color: #d5c75f;
+	display: flex;
 }
 
-.contenedor {
-	background-color: #d5c75f ;
-	display: flex;
-	flex-direction: row;
-}
 
 .contenedor > div {
 	text-align: center;
-	padding: 10px;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 13px;
+	padding-bottom: 20px;  
 	margin: 10px;
 	width: 50%;
 }
@@ -126,8 +127,9 @@ div img[src$="imagen2.jpg"]{
 }
 
 #imagen1:hover{
-
 	animation-name: imagen1-animacion-in;
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Safari */
 	transform: rotate( 10deg);
 	transition: 1s;
 }
@@ -135,7 +137,9 @@ div img[src$="imagen2.jpg"]{
 @keyframes
 imagen1-animacion-in {
 	to {
-		transform: rotate(10deg);
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Safari */
+	transform: rotate(10deg);
 	}
 }
 
@@ -154,14 +158,18 @@ imagen1-animacion-out {
 
 #imagen2:hover{
 	animation-name: imagen2-animacion-in;
-	transform: translate();
+	-ms-transform: translate( 20px, -5px); /* IE 9 */
+    -webkit-transform: translate( 20px, -5px); /* Safari */
+	transform: translate( 20px, -5px);
 	transition: 1s;
 }
 
 @keyframes
 imagen2-animacion-in {
 	to {
-		transform: translate(5px,20px);
+		-ms-transform: translate( 20px, -5px); /* IE 9 */
+		-webkit-transform: translate( 20px, -5px); /* Safari */
+		transform: translate( 5px, 20px);
 	}
 }
 
@@ -170,5 +178,662 @@ imagen2-animacion-out {
 	to {
 		transform: translate();
 	}
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+    margin: auto;
+	background-color: #C6d5c5;
+	height: 300px;
+	border-radius: 0px 0px 10px 10px; 
+	top: 0;
+}
+
+footer
+
+.piedepagina{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: row;
+	color: #5b7989;
+	position: absolute;
+
+}
+
+.piedepagina2{
+	list-style: none;
+	display: inline-flex;
+	flex-direction: row;
+	color: #5b7989;
+	position: absolute;
+}
+
+.piedepagina li{
+
+}
+
+.piedepagina2 li{
+
+}
+
+.redessociales {
+	width: 15px;
+}
+/* paisajes*/
+
+#contenido-paisajes{
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor-paisajes {
+	height: 415px;
+	background-color: #d5c75f;
+	display: flex;
+}
+
+div.contenedor-paisajes {
+    margin: auto;
+    width: 70%;
+}
+
+.contenedor-paisajes > div {
+	text-align: center;
+	margin: 10px;
+	padding: -20px;
+	width: 50%;
+	display: inline-block;
+}
+
+.contenedor-paisajes img{
+	width: 315px;
+}
+
+#imagen1-paisajes{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+
+#imagen2-paisajes{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen3-paisajes{
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+}
+
+#imagen4-paisajes{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#imagen5-paisajes{
+
+}
+
+#imagen6-paisajes{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+/*-------------------------------------------------------------*/
+
+@media (max-width: 900px) {
+    /* STYLES HERE */
+
+	body {
+		background: #02010a;
+		color: white;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	header{
+		display: block;
+	    margin: auto;
+		background-color: #5b7989;
+		width: 100%;
+		height: 100px;
+		border-radius: 10px 10px 0px 0px; 
+		right: 0;
+		left: 0;
+	}
+
+	.texto1{
+		padding-left: 30px;
+		float: left;
+	}
+
+	.texto1 h1{
+		text-shadow: 2px 2px #02010a;
+	}
+
+	.navbar{
+		padding-top: 20px;
+		float: right;
+		text-align: right;
+	}
+
+	.inicio {
+		text-decoration: none;
+	}
+
+	.paisajes {
+		text-decoration: none;
+	}
+
+	.retratos {
+		text-decoration: none;
+	}
+
+	.navbar ul li{
+		padding-right: 50px;
+		display: inline;
+		list-style:none;
+	}
+
+	.navbar ul li a{
+	}
+
+	.navbar ul li a:link{
+		color: white;
+	}
+
+	.navbar ul li a:visited{
+		color: white;
+	}
+
+	.navbar ul li a:hover{
+		text-decoration: none;
+	}
+
+	picture{
+		box-shadow: 2px 0px #82c3a6;
+		display: inline-block;
+		padding-top: 30px;
+		width: 100%;
+		height: 300px;
+		background: #82c3a6;
+	}
+
+	picture img{	
+	    display: block;
+
+	    width: 84%;
+	}
+
+	#contenido {
+		border: 1px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenedor {
+		margin: auto;
+	    width: 100%;
+		height: 950px;
+		background-color: #d5c75f;
+		display: inline;
+	}
+
+
+	.contenedor > div {
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 60px;
+		width: 50%;
+	}
+
+	div img{
+		display: inline;
+		width: 600px;
+	}
+
+	div img[src$="imagen1.jpg"]{
+		border: 2px solid black;
+		box-shadow: 2px 0px #82c3a6;
+	}
+
+	div img[src$="imagen2.jpg"]{
+		border: 2px solid black;
+		box-shadow: 2px 0px #82c3a6;
+	}
+
+	#imagen1{
+		animation-name: out;
+		animation-name: imagen1-animacion-out;
+		transition: 1s;
+	}
+
+	#imagen1:hover{
+		animation-name: imagen1-animacion-in;
+		-ms-transform: rotate(10deg); /* IE 9 */
+		-webkit-transform: rotate(10deg); /* Safari */
+		transform: rotate( 10deg);
+		transition: 1s;
+	}
+
+	@keyframes
+	imagen1-animacion-in {
+		to {
+		-ms-transform: rotate(10deg); /* IE 9 */
+		-webkit-transform: rotate(10deg); /* Safari */
+		transform: rotate(10deg);
+		}
+	}
+
+	@keyframes
+	imagen1-animacion-out {
+		to {
+			transform: rotate(0deg);
+		}
+	}
+
+	#imagen2{
+		animation-name: out;
+		animation-name: imagen2-animacion-out;
+		transition: 1s;
+	}
+
+	#imagen2:hover{
+		animation-name: imagen2-animacion-in;
+		-ms-transform: translate( 20px, -5px); /* IE 9 */
+	    -webkit-transform: translate( 20px, -5px); /* Safari */
+		transform: translate( 20px, -5px);
+		transition: 1s;
+	}
+
+	@keyframes
+	imagen2-animacion-in {
+		to {
+			-ms-transform: translate( 20px, -5px); /* IE 9 */
+			-webkit-transform: translate( 20px, -5px); /* Safari */
+			transform: translate( 5px, 20px);
+		}
+	}
+
+	@keyframes
+	imagen2-animacion-out {
+		to {
+			transform: translate();
+		}
+	}
+
+	footer{
+		display: inline-flex;
+		width: 100%;
+	    margin: auto;
+		background-color: #C6d5c5;
+		height: 400px;
+		border-radius: 0px 0px 10px 10px; 
+		top: 0;
+	}
+
+	.piedepagina{
+		margin-top: 0px;
+		margin-left: 50px;
+		list-style: none;
+		display: inline-flex;
+		color: #5b7989;
+	}
+
+
+	.piedepagina2{
+		margin-left: 50px;
+		margin-top: 180px; 
+		list-style: none;
+		display: inline-flex;
+		color: #5b7989;
+	}
+
+
+	.piedepagina li{
+		width: 300px;
+	}
+
+	.piedepagina2 li{
+		width: 300px;
+	}
+
+
+	.redessociales {
+		width: 15px;
+	}
+	/* paisajes*/
+
+	#contenido-paisajes{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenedor-paisajes {
+		height: 415px;
+		background-color: #d5c75f;
+
+	}
+
+	div.contenedor-paisajes {
+	    margin: auto;
+	    width: 70%;
+	}
+
+	.contenedor-paisajes > div {
+		text-align: center;
+		margin: 10px;
+		padding: -20px;
+		width: 50%;
+		display: inline-block;
+	}
+
+	.contenedor-paisajes img{
+		width: 315px;
+	}
+
+	#imagen1-paisajes{
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+
+
+	#imagen2-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#imagen3-paisajes{
+		-webkit-filter: sepia(100%);
+		filter: sepia(100%);
+	}
+
+	#imagen4-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#imagen5-paisajes{
+
+	}
+
+	#imagen6-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+}
+
+@media (max-width: 500px) {
+    /* STYLES HERE */
+
+	body {
+		background: #02010a;
+		color: white;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	header{
+		display: block;
+	    margin: auto;
+		background-color: #5b7989;
+		width: 100%;
+		height: 100px;
+		border-radius: 10px 10px 0px 0px; 
+		right: 0;
+		left: 0;
+	}
+
+	.texto1{
+		padding-left: 30px;
+		float: left;
+	}
+
+	.texto1 h1{
+		text-shadow: 2px 2px #02010a;
+	}
+
+	.navbar{
+		padding-top: 20px;
+		float: right;
+		text-align: right;
+	}
+
+	.inicio {
+		text-decoration: none;
+	}
+
+	.paisajes {
+		text-decoration: none;
+	}
+
+	.retratos {
+		text-decoration: none;
+	}
+
+	.navbar ul li{
+		padding-right: 50px;
+		display: inline;
+		list-style:none;
+	}
+
+	.navbar ul li a{
+	}
+
+	.navbar ul li a:link{
+		color: white;
+	}
+
+	.navbar ul li a:visited{
+		color: white;
+	}
+
+	.navbar ul li a:hover{
+		text-decoration: none;
+	}
+
+	picture{
+		box-shadow: 2px 0px #82c3a6;
+		display: inline-block;
+	    margin: auto;
+		padding-top: 30px;
+		width: 100%;
+		height: 300px;
+		background: #82c3a6;
+	}
+
+	picture img{	
+	    display: block;
+	    margin: auto;
+	    width: 84%;
+	}
+
+	#contenido {
+		border: 1px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenedor {
+		height: 415px;
+		background-color: #d5c75f;
+		display: flex;
+	}
+
+	div.contenedor {
+	    margin: auto;
+	    width: 70%;
+	}
+
+	.contenedor > div {
+		text-align: center;
+		padding-top: 40px;
+		padding-right: 10px;
+		padding-left: 13px;
+		padding-bottom: 20px;  
+		margin: 10px;
+		width: 50%;
+	}
+
+	div img{
+		display: inline;
+		width: 500px;
+	}
+
+	div img[src$="imagen1.jpg"]{
+		border: 2px solid black;
+		box-shadow: 2px 0px #82c3a6;
+	}
+
+	div img[src$="imagen2.jpg"]{
+		border: 2px solid black;
+		box-shadow: 2px 0px #82c3a6;
+	}
+
+	#imagen1{
+		animation-name: out;
+		animation-name: imagen1-animacion-out;
+		transition: 1s;
+	}
+
+	#imagen1:hover{
+		animation-name: imagen1-animacion-in;
+		-ms-transform: rotate(10deg); /* IE 9 */
+		-webkit-transform: rotate(10deg); /* Safari */
+		transform: rotate( 10deg);
+		transition: 1s;
+	}
+
+	@keyframes
+	imagen1-animacion-in {
+		to {
+		-ms-transform: rotate(10deg); /* IE 9 */
+		-webkit-transform: rotate(10deg); /* Safari */
+		transform: rotate(10deg);
+		}
+	}
+
+	@keyframes
+	imagen1-animacion-out {
+		to {
+			transform: rotate(0deg);
+		}
+	}
+
+	#imagen2{
+		animation-name: out;
+		animation-name: imagen2-animacion-out;
+		transition: 1s;
+	}
+
+	#imagen2:hover{
+		animation-name: imagen2-animacion-in;
+		-ms-transform: translate( 20px, -5px); /* IE 9 */
+	    -webkit-transform: translate( 20px, -5px); /* Safari */
+		transform: translate( 20px, -5px);
+		transition: 1s;
+	}
+
+	@keyframes
+	imagen2-animacion-in {
+		to {
+			-ms-transform: translate( 20px, -5px); /* IE 9 */
+			-webkit-transform: translate( 20px, -5px); /* Safari */
+			transform: translate( 5px, 20px);
+		}
+	}
+
+	@keyframes
+	imagen2-animacion-out {
+		to {
+			transform: translate();
+		}
+	}
+
+
+	footer{
+		height: 20px;
+		width: 100%;
+	    margin: auto;
+		background-color: #C6d5c5;
+		border-radius: 0px 0px 10px 10px; 
+		top: 0;
+	}
+
+	.piedepagina{
+		list-style: none;
+		display: flex;
+		color: #5b7989;
+		position: absolute;
+	}
+
+	.piedepagina li{
+		width: 270px;
+	}
+
+
+	.redessociales {
+		width: 15px;
+	}
+	/* paisajes*/
+
+	#contenido-paisajes{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contenedor-paisajes {
+		height: 415px;
+		background-color: #d5c75f;
+
+	}
+
+	div.contenedor-paisajes {
+	    margin: auto;
+	    width: 70%;
+	}
+
+	.contenedor-paisajes > div {
+		text-align: center;
+		margin: 10px;
+		padding: -20px;
+		width: 50%;
+		display: inline-block;
+	}
+
+	.contenedor-paisajes img{
+		width: 315px;
+	}
+
+	#imagen1-paisajes{
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+
+
+	#imagen2-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#imagen3-paisajes{
+		-webkit-filter: sepia(100%);
+		filter: sepia(100%);
+	}
+
+	#imagen4-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#imagen5-paisajes{
+
+	}
+
+	#imagen6-paisajes{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
 }
 
