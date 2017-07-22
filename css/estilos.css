@@ -2,6 +2,20 @@ body {
 	background: #02010a;
 	color: white;
 	font-family: 'Oswald', sans-serif;
+	animation-duration: 3s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 100%;
+    width: 100%;
+  }
+
+  60% {
+    margin-top: -5%;
+    width: 100%;
+  }
 }
 
 header{
@@ -11,6 +25,7 @@ header{
 	width: 70%;
 	height: 100px;
 	border-radius: 10px 10px 0px 0px; 
+
 }
 
 .texto1{
@@ -205,6 +220,80 @@ footer {
 .redessociales {
 	width: 15px;
 }
+/*-----paisajes-------*/
+
+.paisajesyretratos-paisajes{
+	margin: auto;
+	width: 70%;
+	background-color: #d5c75f;
+	display: flex;
+}
+
+.paisajesyretratos-paisajes > div {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 13px;
+	padding-bottom: 20px;  
+	margin: 10px;
+	width: 50%;
+}
+
+.paisajesyretratos-paisajes div img{
+	display: inline;
+	width: 300px;
+}
+
+.paisajesyretratos-paisajes2{
+	margin: auto;
+	width: 70%;
+	background-color: #d5c75f;
+	display: flex;
+}
+
+.paisajesyretratos-paisajes2 > div {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 13px;
+	padding-bottom: 20px;  
+	margin: 10px;
+	width: 50%;
+}
+
+.paisajesyretratos-paisajes2 div img{
+	display: inline;
+	width: 300px;
+}
+
+#paisajes-paisajes1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#paisajes-paisajes2{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisajes-paisajes3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#paisajes-paisajes4{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisajes-paisajes5{
+	
+}
+
+#paisajes-paisajes6{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
 
 /*-------------------------------------------------------------*/
 
@@ -298,25 +387,27 @@ footer {
 	.paisajesyretratos{
 		margin: auto;
 		width: 100%;
-		height: 800px;
+		height: 880px;
 		background-color: #d5c75f;
-		display: flex;
+		display: inline-block;
 	}
 
 	.paisajesyretratos > div {
+		padding-left: 110px;
 		text-align: center;
-		padding-top: 40px;
-		padding-right: 10px;
-		padding-left: 13px;
-		padding-bottom: 20px;  
 		margin: 10px;
-		width: 50%;
-	}
+	} 
 
 	.paisajesyretratos div img{
-		flex-direction: column;
-		display: flex;
 		width: 500px;
+	}
+
+	.paisajesyretratos #paisajes-index {
+		flex-direction: column;
+	}
+
+	.paisajesyretratos #retratos-index {
+		flex-direction: column;
 	}
 
 	div img[src$="imagen1.jpg"]{
@@ -418,7 +509,82 @@ footer {
 	.redessociales {
 		width: 15px;
 	}
+	.paisajesyretratos-paisajes{
+	margin: auto;
+	width: 100%;
+	background-color: #d5c75f;
+	display: flex;
+	}
+
+	.paisajesyretratos-paisajes > div {
+		text-align: center;
+		padding-top: 40px;
+		padding-right: 10px;
+		padding-left: 13px;
+		padding-bottom: 20px;  
+		margin: 10px;
+		width: 50%;
+	}
+
+	.paisajesyretratos-paisajes div img{
+		display: inline;
+		width: 200px;
+	}
+
+	.paisajesyretratos-paisajes2{
+		margin: auto;
+		width: 100%;
+		background-color: #d5c75f;
+		display: flex;
+	}
+
+	.paisajesyretratos-paisajes2 > div {
+		text-align: center;
+		padding-top: 40px;
+		padding-right: 10px;
+		padding-left: 13px;
+		padding-bottom: 20px;  
+		margin: 10px;
+		width: 50%;
+	}
+
+	.paisajesyretratos-paisajes2 div img{
+		display: inline;
+		width: 200px;
+	}
+
+	#paisajes-paisajes1{
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+
+	#paisajes-paisajes2{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#paisajes-paisajes3{
+		-webkit-filter: sepia(90%);
+		filter: sepia(90%);
+	}
+
+	#paisajes-paisajes4{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	#paisajes-paisajes5{
+		
+	}
+
+	#paisajes-paisajes6{
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
 }
+
+
+
 
 /*------------------------------------------------------------------------------*/
 
@@ -448,9 +614,8 @@ footer {
 	}
 
 	.navbar{
+		padding-right: 80px;
 		padding-top: 20px;
-		float: right;
-		text-align: right;
 	}
 
 	.inicio {
@@ -466,9 +631,9 @@ footer {
 	}
 
 	.navbar ul li{
-		padding-right: 50px;
+		padding: 20px;
 		display: inline;
-		list-style:none;
+		list-style: none;
 	}
 
 	.navbar ul li a{
@@ -503,18 +668,18 @@ footer {
 	}
 
 	#contenido .slyder img{
-		width: 620px;
+		width: 90%;
 		padding-top: 20px;
 		padding-bottom: 20px;
-		margin: 1em 9%;
+		margin: 0.5em 5%;
 	}
 
 	.paisajesyretratos{
 		margin: auto;
 		width: 100%;
-		height: 800px;
+		height: 700px;
 		background-color: #d5c75f;
-		display: flex;
+		display: inline-block;
 	}
 
 	.paisajesyretratos > div {
@@ -529,7 +694,7 @@ footer {
 
 	.paisajesyretratos div img{
 		display: inline;
-		width: 500px;
+		width: 370px;
 	}
 
 	div img[src$="imagen1.jpg"]{
@@ -619,8 +784,9 @@ footer {
 	}
 
 	#disponible .pie {
+		padding-left: 170px;
 		position: relative;
-		display: flex;
+		display: inline-block;
 		flex-direction: row;
 	}
 
@@ -632,6 +798,80 @@ footer {
 	.redessociales {
 		width: 15px;
 	}
+	
+	.paisajesyretratos-paisajes{
+	margin: auto;
+	width: 100%;
+	background-color: #d5c75f;
+	display: inline-block;
+}
+
+.paisajesyretratos-paisajes > div {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 40px;
+	padding-bottom: 20px;  
+	margin: 10px;
+	width: 50%;
+}
+
+.paisajesyretratos-paisajes div img{
+	display: inline;
+	width: 300px;
+}
+
+.paisajesyretratos-paisajes2{
+	margin: auto;
+	width: 100%;
+	background-color: #d5c75f;
+	display: inline-block;
+}
+
+.paisajesyretratos-paisajes2 > div {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 40px;
+	padding-bottom: 20px;  
+	margin: 10px;
+	width: 50%;
+}
+
+.paisajesyretratos-paisajes2 div img{
+	display: inline;
+	width: 300px;
+}
+
+#paisajes-paisajes1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#paisajes-paisajes2{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisajes-paisajes3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
+
+#paisajes-paisajes4{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#paisajes-paisajes5{
+	
+}
+
+#paisajes-paisajes6{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
 
 }
+
 
